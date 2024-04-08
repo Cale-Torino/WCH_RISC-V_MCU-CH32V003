@@ -77,6 +77,18 @@ To fix you need to go to `C:\Users\User\.gitconfig` and add the lines below.
 	windowMemory = 8096m
 ```
 
+If the Github app on windows moans about it then:
+
+```
+[core]
+	packedGitLimit = 4095m
+	packedGitWindowSize = 4095m
+[pack] 
+	deltaCacheSize = 128m
+	packSizeLimit = 4095m
+	windowMemory = 128m
+```
+
 Check out [fatal early eof fatal index pack failed](https://stackoverflow.com/questions/21277806/fatal-early-eof-fatal-index-pack-failed)
 
 Experienced [PlatformIO CLI](https://docs.platformio.org/en/latest/integration/ide/vscode.html#platformio-core-cli) users can also use the short-hand command.
