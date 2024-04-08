@@ -12,5 +12,13 @@ Wiring the Board to WCH-LinkE
 Switch WCH-LinkE to RISC-V Mode
 If the blue LED on the WCH-LinkE is always on, it is in ARM mode. To program CH32V003, it needs to be switched to RISC-V mode. Hold the Modes key while plugging it in the USB port.
 
+```
+WCH-LinkE     GameConsole
++-------+      +-------+
+|  SWDIO| <--> |DIO    |
+|    GND| ---> |GND    |
+|    3V3| ---> |3V3    |
++-------+      +-------+
+```
 
 
