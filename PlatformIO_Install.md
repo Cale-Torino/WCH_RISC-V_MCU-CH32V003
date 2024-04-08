@@ -55,6 +55,30 @@ https://github.com/platformio/platformio-core/issues/2811
 
 The platform should now be successfully installed.
 
+now when you try to build you may get this warning:
+
+```
+VCSBaseException: VCS: Could not process command ['git', 'clone', '--recursive', '--depth', '1', 'https://github.com/Community-PIO-CH32V/toolchain-riscv-windows.git', 'C:\\Users\\User\\.platformio\\.cache\\tmp\\pkg-installing-yfbbdnke']
+
+fetch-pack: unexpected disconnect while reading sideband packet 
+fatal: early EOF 
+fatal: fetch-pack: invalid index-pack output
+```
+
+To fix you need to go to `C:\Users\User\.gitconfig` and add the lines below.
+
+```config
+[core]
+	packedGitLimit = 4095m
+	packedGitWindowSize = 4095m
+[pack] 
+	deltaCacheSize = 8096m
+	packSizeLimit = 4095m
+	windowMemory = 8096m
+```
+
+Check out [fatal early eof fatal index pack failed](https://stackoverflow.com/questions/21277806/fatal-early-eof-fatal-index-pack-failed)
+
 Experienced [PlatformIO CLI](https://docs.platformio.org/en/latest/integration/ide/vscode.html#platformio-core-cli) users can also use the short-hand command.
 
 ```
