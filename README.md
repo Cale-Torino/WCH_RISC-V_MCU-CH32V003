@@ -21,6 +21,7 @@ Links:
 - [CH32V003 - headers/project example for bare metal - no HAL, no Macros etc.](https://www.eevblog.com/forum/microcontrollers/ch32v003-headersproject-example-for-bare-metal-no-hal-no-macros-etc/)
 - [[CH32V003] The easiest way to use port C/D as INPUT and OUTPUT in the same time?](https://www.eevblog.com/forum/microcontrollers/(ch32v003)-the-easiest-way-to-use-port-cd-as-input-and-output-in-the-same-time/)
 - [Having problem compiling CH32v003Fun examples in Windows](https://www.reddit.com/r/RISCV/comments/1ax3dmk/having_problem_compiling_ch32v003fun_examples_in/?rdt=37495&onetap_auto=true&one_tap=true)
+- https://www.hackster.io/patrick-fitzgerald2/program-ch32v003-risc-v-with-arduino-ide-135f6f
 - []()
 - []()
 - []()
