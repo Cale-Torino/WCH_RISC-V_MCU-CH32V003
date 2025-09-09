@@ -4,7 +4,7 @@
 WCH_RISC-V_MCU-CH32V003
 
 
-
+To switch your WCH Link to ARM mode, you must press and hold the ModeS key on the device while connecting it to your PC via USB.
 
 
 Links:
